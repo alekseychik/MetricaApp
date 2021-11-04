@@ -21,28 +21,28 @@
 <body>
   <div class="container-scroller d-flex">
     <!-- partial:../../partials/_sidebar.html -->
-    
+
     <nav class="sidebar sidebar-offcanvas" id="sidebar">
       <ul class="nav">
         <li class="nav-item sidebar-category">
-          <p>Navigation</p>
+          <p>Меню</p>
           <span></span>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="../../index.html">
             <i class="mdi mdi-view-quilt menu-icon"></i>
-            <span class="menu-title">Dashboard</span>
+            <span class="menu-title">Головна</span>
             <div class="badge badge-info badge-pill">2</div>
           </a>
         </li>
         <li class="nav-item sidebar-category">
-          <p>Components</p>
+          <p>Основне</p>
           <span></span>
         </li>
         <li class="nav-item">
           <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
             <i class="mdi mdi-palette menu-icon"></i>
-            <span class="menu-title">UI Elements</span>
+            <span class="menu-title">Відображення</span>
             <i class="menu-arrow"></i>
           </a>
           <div class="collapse" id="ui-basic">
@@ -55,35 +55,29 @@
         <li class="nav-item">
           <a class="nav-link" href="../../pages/forms/basic_elements.html">
             <i class="mdi mdi-view-headline menu-icon"></i>
-            <span class="menu-title">Form elements</span>
+            <span class="menu-title">Підключення ресурсів</span>
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="../../pages/charts/chartjs.html">
             <i class="mdi mdi-chart-pie menu-icon"></i>
-            <span class="menu-title">Charts</span>
+            <span class="menu-title">Метрики</span>
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="../../pages/tables/basic-table.html">
             <i class="mdi mdi-grid-large menu-icon"></i>
-            <span class="menu-title">Tables</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../../pages/icons/mdi.html">
-            <i class="mdi mdi-emoticon menu-icon"></i>
-            <span class="menu-title">Icons</span>
+            <span class="menu-title">Дані</span>
           </a>
         </li>
         <li class="nav-item sidebar-category">
-          <p>Pages</p>
+          <p>Акаунт</p>
           <span></span>
         </li>
         <li class="nav-item">
           <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
             <i class="mdi mdi-account menu-icon"></i>
-            <span class="menu-title">User Pages</span>
+            <span class="menu-title">Сторінка користувача</span>
             <i class="menu-arrow"></i>
           </a>
           <div class="collapse" id="auth">
@@ -97,18 +91,18 @@
           </div>
         </li>
         <li class="nav-item sidebar-category">
-          <p>Apps</p>
+          <p>Налаштування</p>
           <span></span>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="../../docs/documentation.html">
             <i class="mdi mdi-file-document-box-outline menu-icon"></i>
-            <span class="menu-title">Documentation</span>
+            <span class="menu-title">Документація</span>
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="http://www.bootstrapdash.com/demo/spica/template/">
-            <button class="btn bg-danger btn-sm menu-title">Upgrade to pro</button>
+            <button class="btn bg-danger btn-sm menu-title">Оновити</button>
           </a>
         </li>
       </ul>
@@ -240,7 +234,7 @@
           <ul class="navbar-nav navbar-nav-right">
             <li class="nav-item nav-profile dropdown">
               <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
-                <img src="../../images/faces/face5.jpg" alt="profile"/>
+                <img src="../../images/faces/face5.jpeg" alt="profile"/>
                 <span class="nav-profile-name">Eleanor Richardson</span>
               </a>
               <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
@@ -279,35 +273,41 @@
             <div class="col-md-6 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Default form</h4>
+                  <h4>Форма підключення нового джерела даних</h4>
                   <p class="card-description">
-                    Basic form layout
+                    Заповніть всі поля
                   </p>
                   <form class="forms-sample">
                     <div class="form-group">
-                      <label for="exampleInputUsername1">Username</label>
-                      <input type="text" class="form-control" id="exampleInputUsername1" placeholder="Username">
+                      <label for="SelectDB">Оберіть базу даних</label>
+                      <select class="form-control" id="SelectDB">
+                        <option>Oracle</option>
+                        <option>MySQL</option>
+                        <option>Microsoft SQL Server</option>
+                        <option>Microsoft Access</option>
+                        <option>SQLite</option>
+                      </select>
                     </div>
                     <div class="form-group">
-                      <label for="exampleInputEmail1">Email address</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                      <label for="exampleInputUsername1">Server host name</label>
+                      <input type="text" class="form-control" id="exampleInputUsername1" placeholder="Server host name">
                     </div>
                     <div class="form-group">
-                      <label for="exampleInputPassword1">Password</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                      <label for="exampleInputEmail1">Server port number</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Server port number">
                     </div>
                     <div class="form-group">
-                      <label for="exampleInputConfirmPassword1">Confirm Password</label>
-                      <input type="password" class="form-control" id="exampleInputConfirmPassword1" placeholder="Password">
+                      <label for="exampleInputPassword1">Administrator username</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Administrator username">
                     </div>
-                    <div class="form-check form-check-flat form-check-primary">
-                      <label class="form-check-label">
-                        <input type="checkbox" class="form-check-input">
-                        Remember me
-                      </label>
+                    <div class="form-group">
+                      <label for="exampleInputConfirmPassword1">Administrator Password</label>
+                      <input type="password" class="form-control" id="exampleInputConfirmPassword1" placeholder="Administrator Password">
                     </div>
-                    <button type="submit" class="btn btn-primary mr-2">Submit</button>
-                    <button class="btn btn-light">Cancel</button>
+                    <div class="text-center">
+                      <button type="submit" class="btn btn-primary mr-2">Підключити</button>
+                      <button class="btn btn-light">Відмінити</button>
+                    </div>
                   </form>
                 </div>
               </div>
