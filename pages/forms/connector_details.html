@@ -59,7 +59,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../../pages/charts/metrics.html">
+          <a class="nav-link" href="../../pages/charts/forecasts.html">
             <i class="mdi mdi-chart-line menu-icon"></i>
             <span class="menu-title">Прогнозування</span>
           </a>
@@ -91,7 +91,7 @@
           </div>
         </li>-->
         <li class="nav-item">
-          <a class="nav-link" href="../../pages/forms/account.html">
+          <a class="nav-link" href="../../pages/tables/data.html">
             <i class="mdi mdi-account menu-icon"></i>
             <span class="menu-title">Акаунт користувача</span>
           </a>
@@ -218,52 +218,38 @@
         </div>
       </nav>
       <!-- partial -->
-      <div class="main-panel">        
+      <div class="main-panel">
         <div class="content-wrapper">
-          <div class="row justify-content-center">
-            <div class="col-md-6 grid-margin stretch-card">
+          <h4 class="card-title">Інформація про конектор</h4>
+          <div class="row">
+            <div class="col-4 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4>Форма підключення нового джерела даних</h4>
-                  <p class="card-description">
-                    Заповніть всі обов'язкові поля
-                  </p>
+                  <img src="/images/resources/azure-sql-bg-logo.jpg" alt="Azure SQL Database"/>
+                  <label class="badge badge-success">Підключено</label>
+                </div>
+              </div>
+            </div>
+            <div class="col-8 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
                   <form class="forms-sample">
                     <div class="form-group">
-                      <label for="SelectDB">Оберіть базу даних</label>
-                      <select class="form-control" id="SelectDB">
-                        <option>Oracle</option>
-                        <option>MySQL</option>
-                        <option>Microsoft SQL Server</option>
-                        <option>Microsoft Access</option>
-                        <option>SQLite</option>
-                        <option>PostgreSQL</option>
-                        <option>Teradata</option>
-                      </select>
+                      <label for="exampleInputName1">Назва ресурсу</label>
+                      <input type="text" class="form-control" id="exampleInputName1" value="Azure SQL database">
                     </div>
                     <div class="form-group">
-                      <label for="exampleInputUsername1">Ім’я хосту або IP-адреса</label>
-                      <input type="text" class="form-control" id="exampleInputUsername1" placeholder="192.168.2.15">
+                      <label for="exampleInputEmail3">Назва бази даних</label>
+                      <input type="email" class="form-control" id="exampleInputEmail3" value="DB_HYPERSCALE">
                     </div>
                     <div class="form-group">
-                      <label for="exampleInputEmail1">Порт (необов’язково)</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="3044">
+                      <label for="exampleInputEmail3">Ім’я хосту/IP-адреса</label>
+                      <input type="email" class="form-control" id="exampleInputEmail3" value="192.168.2.15">
                     </div>
-                    <div class="form-group">
-                      <label for="exampleInputDB">База даних</label>
-                      <input type="email" class="form-control" id="exampleInputDB" placeholder="DB_HYPERSCALE">
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputPassword1">Ім’я користувача</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="admin">
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputConfirmPassword1">Пароль</label>
-                      <input type="password" class="form-control" id="exampleInputConfirmPassword1" placeholder="password">
-                    </div>
-                    <div class="text-center">
-                      <button type="submit" class="btn btn-primary mr-2">Підключити</button>
-                      <button class="btn btn-light">Відмінити</button>
+                    <div class="align-items-center">
+                      <a href="/../pages/forms/connectors.html">
+                        <button class="btn btn-danger">Відключити</button>
+                      </a>
                     </div>
                   </form>
                 </div>
